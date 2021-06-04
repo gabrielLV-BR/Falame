@@ -1,0 +1,58 @@
+@mixin onTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+@mixin flexCenter($direction) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	@include onTop();
+	@include flexCenter(row);
+
+	z-index: 15;
+
+	.popup {
+		@include flexCenter(column);
+
+		padding: 1rem;
+		border-radius: 1rem;
+		z-index: 20;
+
+		background-color: var(--gray-200);
+
+		h1,
+		h2,
+		p {
+			font: 2rem "Sen", sans-serif;
+			font-weight: bold;
+		}
+
+		input[type="text"] {
+			width: 80%;
+			height: 3rem;
+			border: 0;
+			font: 2rem "Sen", sans-serif;
+		}
+
+		button {
+			margin: 1rem;
+		}
+	}
+
+	&::before {
+		@include onTop();
+		content: "";
+
+		opacity: 0.3;
+
+		background-color: var(--gray-200);
+	}
+}

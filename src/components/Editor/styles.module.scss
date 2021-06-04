@@ -1,0 +1,54 @@
+@mixin flexCenter($direction) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: center;
+	align-items: center;
+}
+
+.editorContainer {
+	height: calc(100vh - 7rem);
+
+	background: var(--gray-100);
+
+	@include flexCenter(column);
+
+	overflow: hidden;
+
+	h1 {
+		position: relative;
+		text-align: center;
+		max-width: 50vw;
+		max-height: 2ch;
+
+		&:hover {
+			cursor: pointer;
+		}
+		&:hover::after {
+			content: "";
+
+			position: absolute;
+			top: 0;
+			right: -3.5rem;
+
+			display: inline-block;
+
+			background-image: url("/icons/edit_transparent.svg");
+			background-size: 50px 50px;
+
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	font: 1.5rem "Sen", sans-serif;
+
+	.cellContainer {
+		flex: 2;
+		width: 100vw;
+
+		@include flexCenter(row);
+
+		overflow-y: scroll;
+		flex-wrap: wrap;
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g id="Layer_1" transform="matrix(1, 0, 0, 1, 0.32467, -0.32468)" bx:origin="0 0">
+    <title>Layer 1</title>
+    <rect stroke="#000" id="svg_6" height="200" width="200" y="0.32468" x="-0.32467" stroke-opacity="null" stroke-dasharray="null" stroke-width="0" fill="#f1f1f1"/>
+  </g>
+  <path d="M -7.876 -43.937 Q -0.406 -56.875 7.064 -43.937 L 41.921 16.438 Q 49.391 29.376 34.452 29.376 L -35.264 29.376 Q -50.203 29.376 -42.733 16.438 Z" style="fill: rgb(164, 207, 126);" transform="matrix(0, -1, -1, 0, 95.308624, 97.098167)" bx:shape="triangle -50.203 -56.875 99.594 86.251 0.5 0.15 1@6029d9e1"/>
+</svg>

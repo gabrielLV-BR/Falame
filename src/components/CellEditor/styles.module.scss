@@ -1,0 +1,108 @@
+.container {
+	position: absolute;
+
+	z-index: 10;
+
+	top: 100px;
+	left: 0;
+
+	background-color: var(--gray-300);
+	padding: 1rem;
+
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 0.5rem 2rem 2rem 2rem;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+
+	label {
+		font: 2rem "Sen", sans-serif;
+	}
+
+	span {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		position: relative;
+
+		input,
+		select {
+			font: 1.75rem "Sen", sans-serif;
+
+			max-width: 15rem;
+
+			color: var(--gray-600);
+
+			&::placeholder {
+				color: var(--gray-200);
+			}
+
+			border: 0;
+			padding: 0.5rem;
+			border-radius: 0.5rem;
+		}
+
+		a {
+			position: absolute;
+
+			right: 0;
+			top: 50%;
+
+			color: red;
+
+			font-size: 3rem;
+
+			width: 6rem;
+			border-radius: 0;
+		}
+	}
+
+	select option {
+		background-color: var(--white);
+		color: var(--gray-600);
+
+		&:disabled {
+			background-color: var(--gray-100);
+			color: var(--gray-300);
+		}
+	}
+
+	// Agora button é um elemento separado.
+
+	// button {
+	// 	width: 16rem;
+	// 	height: 3rem;
+
+	// 	font: 1.65rem "Sen", sans-serif;
+	// 	text-transform: uppercase;
+
+	// 	color: var(--white);
+	// 	background-color: var(--background-200);
+
+	// 	border: 0;
+	// 	box-shadow: 0 9px var(--shadow-400);
+	// 	border-radius: 0.5rem;
+
+	// 	&:active {
+	// 		background-color: var(--background-300);
+	// 		box-shadow: 0 4px var(--shadow-400);
+	// 		transform: translateY(5px);
+	// 	}
+	// }
+
+	// // CSS É MARA!
+
+	// button.confirm {
+	// 	--background-200: var(--green-200);
+	// 	--background-300: var(--green-300);
+	// 	--shadow-400: var(--green-400);
+	// }
+
+	// button.delete {
+	// 	--background-200: var(--red-200);
+	// 	--background-300: var(--red-300);
+	// 	--shadow-400: var(--red-400);
+	// }
+}

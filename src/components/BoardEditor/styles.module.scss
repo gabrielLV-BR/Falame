@@ -1,0 +1,43 @@
+// .container {
+// 	display: flex;
+// 	flex-direction: row;
+// 	align-items: center;
+// 	justify-content: center;
+
+// 	gap: 2rem;
+// 	margin: 1rem;
+// 	padding: 0 2rem;
+
+// 	background: var(--gray-300);
+
+// 	border-radius: 1rem;
+
+// 	h1 {
+// 		min-width: 5rem;
+// 		max-width: 50vw;
+// 		text-align: center;
+// 		overflow-y: hidden;
+// 		overflow-x: hidden;
+// 	}
+
+// 	button {
+// 		width: 16rem;
+// 		height: 3rem;
+
+// 		font: 1.65rem "Sen", sans-serif;
+// 		text-transform: uppercase;
+
+// 		color: var(--white);
+// 		background-color: var(--green-200);
+
+// 		border: 0;
+// 		box-shadow: 0 9px var(--green-400);
+// 		border-radius: 0.5rem;
+
+// 		&:active {
+// 			background-color: var(--green-300);
+// 			box-shadow: 0 4px var(--green-400);
+// 			transform: translateY(5px);
+// 		}
+// 	}
+// }
